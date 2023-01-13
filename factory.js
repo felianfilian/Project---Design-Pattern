@@ -21,4 +21,7 @@ function FactoryPattern() {
   };
 }
 
-Developer("Mario");
+const employeeFactory = new FactoryPattern();
+const employees = [];
+
+employees.push(employeeFactory.create("Luigi", 1));
