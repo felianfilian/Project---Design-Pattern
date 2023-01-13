@@ -21,7 +21,13 @@ function FactoryPattern() {
   };
 }
 
+function output01() {
+  console.log("hello " + this.name + " you are " + this.type);
+}
+
 const employeeFactory = new FactoryPattern();
 const employees = [];
 
 employees.push(employeeFactory.create("Luigi", 1));
+
+output01();
