@@ -30,4 +30,6 @@ const employees = [];
 
 employees.push(employeeFactory.create("Luigi", 1));
 
-output01();
+employees.forEach((emp) => {
+  output01.call(emp);
+});
