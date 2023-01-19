@@ -5,7 +5,7 @@ function Developer(name) {
 
 function Tester(name) {
   this.name = name;
-  this.type = "Test";
+  this.type = "Tester";
 }
 
 function FactoryPattern() {
@@ -29,6 +29,8 @@ const employeeFactory = new FactoryPattern();
 const employees = [];
 
 employees.push(employeeFactory.create("Luigi", 1));
+employees.push(employeeFactory.create("Mario", 2));
+employees.push(employeeFactory.create("Peach", 1));
 
 employees.forEach((emp) => {
   output01.call(emp);
